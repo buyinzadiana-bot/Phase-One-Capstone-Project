@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Catalogue | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--this is an internal css for animation -->
+    <style>
+      @keyframes slideIn {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      .animate-slideIn {
+        animation: slideIn 0.3s ease-out;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-gray-900 dark:bg-black dark:text-gray-100">
+    
+    <!-- HEADER -->
+    <header
+      class="sticky top-0 z-40 bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800"
+    >
+      <div class="w-full px-6 lg:px-12">
+        <nav class="flex items-center justify-between h-16 w-full">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-3">
+            <span
+              class="text-2xl font-bold text-indigo-600 dark:text-indigo-400"
+              >Book Catalogue</span
+            >
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <li><a href="index.html" class="hover:text-indigo-500">Home</a></li>
+        <li><a href="discover.html" class="hover:text-indigo-500">Discover</a></li>
+        <li><a href="favorites.html" class="text-indigo-600 font-bold">Favorites</a></li>
+        <li><a href="about.html" class="hover:text-indigo-500">About</a></li>
+        <li><a href="signup.html" class="hover:text-indigo-500">Sign Up</a></li>
+      </ul>
+
+      <!-- Hamburger Button (for small screens) -->
+      <button id="mobileMenuBtn" class="md:hidden ml-auto p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div id="mobileMenu" class="hidden md:hidden flex-col mt-3 space-y-2 bg-white dark:bg-black p-4 rounded-lg shadow-lg">
+      <a href="index.html" class="block hover:text-indigo-500">Home</a>
+      <a href="discover.html" class="block hover:text-indigo-500">Discover</a>
+      <a href="favorites.html" class="block text-indigo-600 font-bold">Favorites</a>
+      <a href="about.html" class="block hover:text-indigo-500">About</a>
+      <a href="signup.html" class="block hover:text-indigo-500">Sign Up</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+    <!-- HERO -->
+    <section
+      class="relative w-full h-[50vh] flex items-center justify-center overflow-hidden"
+    >
+      <video autoplay muted loop playsinline class="w-full object-cover z-0">
+        <source src="Book Promotion Video.mp4.mp4" type="video/mp4" />
+      </video>
+      <div class="absolute z-10 text-white text-center">
+        <h1 class="text-4xl font-bold">Discover Your Next Great Read</h1>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="py-10 text-center">
+      <h2 class="text-2xl font-bold mb-4">📚 Explore by Category</h2>
+      <div id="categoryContainer" class="flex flex-wrap justify-center gap-4">
+        <!-- JS will add category buttons -->
+      </div>
+    </section>
+
+    <!-- BOOK RESULTS -->
+    <section class="px-6 py-8">
+      <h3
+        id="categoryTitle"
+        class="text-xl font-semibold mb-4 text-center"
+      ></h3>
+      <div
+        id="booksContainer"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      ></div>
+    </section>
+
+    <!-- BOOK TRACK -->
+    <section class="px-6 py-8 bg-gray-50 dark:bg-gray-900">
+      <h2 class="text-2xl font-bold mb-4">📖 Your Book Tracker</h2>
+      <ul id="bookTracker" class="space-y-2"></ul>
+    </section>
+
+    <!-- AUTHORS SECTION -->
+    <section class="px-6 py-8">
+      <h2 class="text-2xl font-bold mb-4">👩‍💼 Authors Featured</h2>
+      <div id="authorsList" class="flex flex-wrap gap-3"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="text-center py-6 border-t border-gray-200 dark:border-gray-800"
+    >
+      <p>&copy; 2025 Book Catalogue. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="/LAB2/index.js"></script>
+
+    <style>
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slideDown {
+    animation: slideDown 0.3s ease-out;
+  }
+</style>
+  </body>
+</html>
