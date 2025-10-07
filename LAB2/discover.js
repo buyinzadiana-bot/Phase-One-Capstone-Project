@@ -45,28 +45,28 @@ function showToast(message, type = "info") {
   }, 2000);
 }
 
-// Favorites
-let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+// Favorite
+let favorite = JSON.parse(localStorage.getItem("favorite")) || [];
 let currentBooks = [];
 
-function saveFavorites() {
-  localStorage.setItem("favorites", JSON.stringify(favorites));
-  window.dispatchEvent(new Event("favoritesUpdated")); // Sync with other pages
+function saveFavorite() {
+  localStorage.setItem("favorite", JSON.stringify(favorite));
+  window.dispatchEvent(new Event("favoriteUpdated")); // Sync with other pages
 }
 
 function isFavorite(bookId) {
-  return favorites.some((b) => b.id === bookId);
+  return favorite.some((b) => b.id === bookId);
 }
 
 function toggleFavorite(book) {
   if (isFavorite(book.id)) {
-    favorites = favorites.filter((b) => b.id !== book.id);
-    showToast("Removed from favorites ❌", "error");
+    favorite = favorite.filter((b) => b.id !== book.id);
+    showToast("Removed from favorite ❌", "error");
   } else {
-    favorites.push(book);
-    showToast("Added to favorites ❤️", "success");
+    favorite.push(book);
+    showToast("Added to favorite ❤️", "success");
   }
-  saveFavorites();
+  saveFavorite();
   renderBooks(currentBooks);
 }
 
@@ -121,7 +121,7 @@ function openModal(book) {
     <p class="text-gray-600 dark:text-gray-400 mb-3">by ${book.author}</p>
     <p class="text-sm text-gray-500 mb-3">Book ID: ${book.id}</p>
     <button class="mt-2 w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" id="favFromModal">
-      ${isFavorite(book.id) ? "Remove from Favorites" : "Add to Favorites"}
+      ${isFavorite(book.id) ? "Remove from Favorite" : "Add to Favorite"}
     </button>
   `;
   document.getElementById("modalContent").innerHTML = html;
