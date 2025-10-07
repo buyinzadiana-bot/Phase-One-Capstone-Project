@@ -80,7 +80,7 @@ Search feature includes “Searching…” feedback.
 
   IMAGES OF HOW MY WEBSITE LOOKS LIKE
 
-* ![image alt ] (https://github.com/buyinzadiana-bot/Phase-One-Capstone-Project/blob/40cae3ab57701445c37499db7bebe69e443f6624/Home.jpeg)
+* ![image alt ](https://github.com/buyinzadiana-bot/Phase-One-Capstone-Project/blob/40cae3ab57701445c37499db7bebe69e443f6624/Home.jpeg)
 * ![image alt ]( https://github.com/buyinzadiana-bot/PHASE-1-CAPSTONE/blob/3c9dde8ae7168bb038c496230753392ed085f164/Discover.jpeg)
 * ![image alt ](https://github.com/buyinzadiana-bot/PHASE-1-CAPSTONE/blob/28ab1c0394dbd2a5d2447f8c50fda4cb665c7fb9/Favorite.jpeg )
 * ![image alt ]( https://github.com/buyinzadiana-bot/PHASE-1-CAPSTONE/blob/e68e38dad4f6e5c1092a90f58a1b0c01e72dadbc/About.jpeg)
