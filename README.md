@@ -84,7 +84,7 @@ Search feature includes “Searching…” feedback.
 * ![image alt ]( https://github.com/buyinzadiana-bot/Phase-One-Capstone-Project/blob/c8ce847f03641c6304a80c0528411983347c7fa3/Discover.jpeg)
 * ![image alt ](https://github.com/buyinzadiana-bot/Phase-One-Capstone-Project/blob/682d89178cd4f824ba0c4c716b90e24a581987a8/Favorite.jpeg )
 * ![image alt ]( https://github.com/buyinzadiana-bot/Phase-One-Capstone-Project/blob/55adb8291ba686f7bc06c3828490f9d72339ca20/About.jpeg)
-* ![image alt ](https://github.com/buyinzadiana-bot/PHASE-1-CAPSTONE/blob/f1e3a9ac28c6b23322d2d325b31900f64ccfc364/Sign%20up.jpeg )
+* ![image alt ](https://github.com/buyinzadiana-bot/Phase-One-Capstone-Project/blob/bd000b047421f2bc53b8e2849fa783c0121c7717/Sign%20up.jpeg )
 
 
 
