@@ -45,13 +45,13 @@ function showToast(message, type = "info") {
   }, 2000);
 }
 
-// Favorite
+// Favorite system
 let favorite = JSON.parse(localStorage.getItem("favorite")) || [];
 let currentBooks = [];
 
 function saveFavorite() {
   localStorage.setItem("favorite", JSON.stringify(favorite));
-  window.dispatchEvent(new Event("favoriteUpdated")); // Sync with other pages
+  window.dispatchEvent(new Event("favoriteUpdated"));
 }
 
 function isFavorite(bookId) {
